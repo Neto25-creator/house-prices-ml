@@ -3,7 +3,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.4%2B-orange.svg)](https://scikit-learn.org/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-2.0%2B-red.svg)](https://xgboost.ai/)
-[![Kaggle Top 1%](https://img.shields.io/badge/Kaggle-Top%201%25%20Level%20(RMSLE%200.1096)-20BEFF.svg)](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
+[![Kaggle Leaderboard #58](https://img.shields.io/badge/Kaggle%20Leaderboard-%2358%20(MAE%2012590.49)-20BEFF.svg)](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > Pipeline completo, modular e reproduzível de Ciência de Dados e Machine Learning para a competição **Housing Prices Competition for Kaggle Learn Users / Ames Housing Dataset**.
@@ -12,14 +12,14 @@
 
 ## 📌 Resumo Executivo & Resultados
 
-O projeto foi estruturado em **duas fases independentes e comparáveis**, demonstrando a evolução de um modelo padrão de mercado até um comitê de elite capaz de romper a barreira de **RMSLE < 0.110**:
+O projeto foi estruturado em **duas fases independentes e comparáveis**, demonstrando a evolução de um modelo padrão de mercado até um comitê de elite capaz de atingir a **Posição #58 no Leaderboard Global do Kaggle** já na sua 1ª submissão:
 
-| Fase | Arquitetura / Comitê | RMSLE (Holdout) | CV Médio (5-Fold) | Erro Médio (MAE) | Submissão Oficial |
-| :---: | :--- | :---: | :---: | :---: | :---: |
-| **🥇 Fase 1** | **Ensemble Inicial (50% XGBoost + 30% Ridge + 20% Random Forest)** | `0.1311` | `0.1292` | US$ 14,782.52 | [`submission_fase1_0.1292.csv`](submission_fase1_0.1292.csv) |
-| **🚀 Fase 2** | **Comitê de Elite (25% XGBoost + 25% Huber GBR + 20% Lasso + 15% ENet + 15% Ridge)** | **`0.1146`** | **`0.1096`** 🔥 | **US$ 12,904.29** | [`submission_elite.csv`](submission_elite.csv) |
+| Fase | Arquitetura / Comitê | RMSLE (Holdout) | CV Médio (5-Fold) | Erro Médio (MAE Local) | Kaggle Oficial (MAE Test) | Submissão |
+| :---: | :--- | :---: | :---: | :---: | :---: | :---: |
+| **🥇 Fase 1** | **Ensemble Inicial (50% XGBoost + 30% Ridge + 20% Random Forest)** | `0.1311` | `0.1292` | US$ 14,782.52 | ~US$ 14,800+ | [`submission_fase1_0.1292.csv`](submission_fase1_0.1292.csv) |
+| **🚀 Fase 2** | **Comitê de Elite (25% XGBoost + 25% Huber GBR + 20% Lasso + 15% ENet + 15% Ridge)** | **`0.1146`** | **`0.1096`** 🔥 | **US$ 12,904.29** | **`12590.49181`** 🏆 (**#58**) | [`submission_elite.csv`](submission_elite.csv) |
 
-> 📉 **Impacto Final da Fase 2:** Redução de **15,2% no erro logarítmico (RMSLE)** e economia de **US$ 1.878,23 de erro médio por casa**, atingindo o patamar de **Top 1% a 2% do ranking mundial do Kaggle**.
+> 🏆 **Resultado Oficial no Kaggle:** **Posição #58 no Mundo** com Score **12590.49181** (com **apenas 1 submissão**). Generalização exemplar: o erro real no conjunto de teste cego foi até ligeiramente menor do que o CV local, comprovando ausência de overfitting e rigor na validação cruzada.
 
 ---
 
